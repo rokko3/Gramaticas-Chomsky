@@ -22,6 +22,7 @@ Son aún más potentes, permitiendo que la estructura de una palabra dependa de 
 # Gramáticas Generativas (Tipo 0)
 
 Son las más generales y poderosas. Son las que Chomsky consideraba necesarias para explicar la capacidad infinita del lenguaje humano. Estas gramáticas no solo describen patrones, sino que generan todas las oraciones gramaticales posibles de un idioma.
+
 ---
 # Estructura del desarrollo de ejemplos con python y C
 
