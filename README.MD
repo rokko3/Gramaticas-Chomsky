@@ -1,18 +1,22 @@
 # Gramaticas-Chomsky
 
 ## Introducción
-Este repositorio contiene implementaciones en **C** y **Python** para trabajar con **gramáticas formales**, especialmente aquellas definidas dentro de la **jerarquía de Chomsky** (Tipos 0, 1, 2 y 3).
+Este repositorio contiene implementaciones en C y Python para trabajar con gramáticas formales, especialmente aquellas definidas dentro de la jerarquía de Chomsky (Tipos 0, 1, 2 y 3).
 
 ## Entendimiento de las Gramaticas Chomsky
+
 El lenguaje generado o las gramaticas propuestas por chomsky consta en describir la estructura subyacente del lenguaje humano y cómo los hablantes pueden generar y comprender un numero infinito de oraciones.
 
 # Gramáticas Regulares (Tipo 3)
+
 Son las mas simples. Describen patrones repetitivos, como encontrar todas las cadenas que empiezan con "a" y terminan con "z". No son suficientes para capturar la complejidad del lenguaje natural.
 
 #Gramáticas Contextuales (Tipo 2)
+
 Permiten la dependencia de una palabra del contexto en el que aparece. Pueden describir patrones más complejos que las gramáticas regulares, pero aún tienen limitaciones.
 
 #Gramáticas Sensibles al Contexto (Tipo 1)
+
 Son aún más potentes, permitiendo que la estructura de una palabra dependa de las palabras que la rodean. Son complejas y difíciles de analizar.
 
 #Gramáticas Generativas (Tipo 0)
