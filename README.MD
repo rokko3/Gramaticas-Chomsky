@@ -11,15 +11,15 @@ El lenguaje generado o las gramaticas propuestas por chomsky consta en describir
 
 Son las mas simples. Describen patrones repetitivos, como encontrar todas las cadenas que empiezan con "a" y terminan con "z". No son suficientes para capturar la complejidad del lenguaje natural.
 
-#Gramáticas Contextuales (Tipo 2)
+# Gramáticas Contextuales (Tipo 2)
 
 Permiten la dependencia de una palabra del contexto en el que aparece. Pueden describir patrones más complejos que las gramáticas regulares, pero aún tienen limitaciones.
 
-#Gramáticas Sensibles al Contexto (Tipo 1)
+# Gramáticas Sensibles al Contexto (Tipo 1)
 
 Son aún más potentes, permitiendo que la estructura de una palabra dependa de las palabras que la rodean. Son complejas y difíciles de analizar.
 
-#Gramáticas Generativas (Tipo 0)
+# Gramáticas Generativas (Tipo 0)
 Son las más generales y poderosas. Son las que Chomsky consideraba necesarias para explicar la capacidad infinita del lenguaje humano. Estas gramáticas no solo describen patrones, sino que generan todas las oraciones gramaticales posibles de un idioma.
 ---
 # Estructura del desarrollo de ejemplos con python y C
