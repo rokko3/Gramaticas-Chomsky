@@ -3,30 +3,9 @@
 #include <stdbool.h>  
 
 
-bool es_g2(const char *s) {
-    int i = 0;
-    int n = 0;
-    int len = strlen(s);
+int es_g4(const char *s) {
+    return strcmp(s, "ab") == 0 || strcmp(s, "abb") == 0;
 
-    if(len< 2){
-        return false;
-
-    }
-
-    while (i < len && (s[i] == 'a' || s[i] == '0')) {
-        i++;
-        n++; 
-    }
-
-
-    for (int j = i; j < len; j++) {
-        if (s[j] != 'b' && s[j] != '1') {
-            return false; 
-        }
-    }
-
-    
-    return (len - i) == n + 1;
 }
 
 int main(int argc, char *argv[]) {
@@ -49,7 +28,7 @@ int main(int argc, char *argv[]) {
 
         linea[strcspn(linea, "\n")] = 0;  
 
-        if (es_g2(linea)) {
+        if (es_g4(linea)) {
             printf("Acepta\n");
         } else {
             printf("No acepta\n");

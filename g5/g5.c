@@ -5,17 +5,17 @@
 bool es_valida(const char *s) {
     int len = strlen(s);
     
-    if (len < 2) return false; // Debe tener al menos "ab"
-    if (s[0] != 'a' || s[len - 1] != 'b') return false; // Comienza con 'a' y termina con 'b'
+    if (len < 2) return false; 
+    if (s[0] != 'a' || s[len - 1] != 'b') return false; 
 
-    // Verificar el patrón "ab" repetido
+
     for (int i = 1; i < len - 1; i += 2) {
         if (s[i] != 'a' || (i + 1 < len - 1 && s[i + 1] != 'b')) {
             return false;
         }
     }
 
-    // Verificar que la longitud de la parte entre 'a' y 'b' sea par
+    
     if ((len - 2) % 2 != 0) return false;
 
     return true;

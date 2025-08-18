@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
 
     char linea[256];
     while (fgets(linea, sizeof(linea), archivo)) {
-        linea[strcspn(linea, "\n")] = 0; // eliminar salto de línea
+        linea[strcspn(linea, "\n")] = 0;
 
         if (es_capicua(linea)) {
             printf("Acepta\n");

@@ -1,8 +1,20 @@
 import sys
-
-def es_g3(s: str) -> bool:
-    return s=="ab" or s=="abb"
-
+def es_g2(s):
+    i = 0
+    n = 0
+    L = len(s)
+    if L < 3:
+        return False
+    while i < L and s[i] == 'a':
+        i += 1
+        n += 1
+    restante = L - i
+    if restante != n + 1:
+        return False
+    for ch in s[i:]:
+        if ch != 'b': 
+            return False
+    return True
 def main():
     if len(sys.argv) != 2:
         print("Agregue un archivo")
@@ -12,9 +24,8 @@ def main():
         with open(nombre_archivo, "r") as f:
             for linea in f:
                 cadena = linea.strip()
-                print(f"{'Acepta' if es_g3(cadena) else 'No acepta'}")
+                print(f"{'Acepta' if es_g2(cadena) else 'No acepta'}")
     except FileNotFoundError:
         print("Archivo no encontrado.")
-
 if __name__ == "__main__":
     main()
